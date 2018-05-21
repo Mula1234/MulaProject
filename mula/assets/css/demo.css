@@ -1,0 +1,144 @@
+@media (min-width: 992px) {
+    .typo-line {
+        padding-left: 140px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .typo-line .category {
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0px;
+        position: absolute;
+    }
+    .sidebar .nav>li.active-pro {
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+    }
+}
+
+#map {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 60px);
+    margin-top: 70px;
+}
+
+.places-buttons .btn {
+    margin-bottom: 30px
+}
+
+.space-70 {
+    height: 70px;
+    display: block;
+}
+
+.tim-row {
+    margin-bottom: 20px;
+}
+
+.tim-typo {
+    padding-left: 25%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.tim-typo .tim-note {
+    bottom: 10px;
+    color: #c0c1c2;
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    left: 0;
+    margin-left: 20px;
+    position: absolute;
+    width: 260px;
+}
+
+.tim-row {
+    padding-top: 50px;
+}
+
+.tim-row h3 {
+    margin-top: 0;
+}
+
+
+
+/*My custom css*/
+span.uploadButton {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border: 1px dotted #888;
+    padding: 20px 0;
+    font-weight: bold;
+    margin-right: 15px;
+    margin-top: 15px;
+    background: #eee;
+    cursor: pointer;
+    -webkit-transition: 0.33s;
+    -moz-transition: 0.33s;
+    -o-transition: 0.33s;
+    transition: 0.33s;
+}
+
+span.uploadButton:hover{
+    border: 1px dotted #aaa;
+    background: #ddd;
+}
+
+ul.asset_docs_list {
+    padding: 15px 0 0 15px;
+}
+
+
+input#referrerCopy{
+    font-size: 16px;
+}
+
+.toast p {
+    margin: 0;
+}
+
+#userProfile{
+    background: #fff;
+    cursor: pointer;
+}
+
+div#ethAddress h3, 
+div#ethAddress p, 
+div#ethAddress h4 {
+    margin: 0;
+}
+
+.modal .modal-header .close {
+    font-size: 25px;
+}
+
+input#ethAddrVal {
+    width: 80%;
+    padding: 8px 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+form label {
+    display: block;
+    text-align: left;
+}
+
+.alert-dismissable .close, .alert-dismissible .close {
+    position: relative;
+    top: 2px;
+    right: 0px;
+    color: inherit;
+}
+
+.tooltip{
+    word-wrap: break-word !important;
+}

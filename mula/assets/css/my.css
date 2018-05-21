@@ -1,0 +1,15 @@
+.md-form.form-sm>span {
+    position: absolute;
+    top: 44px;
+    font-size: 13px;
+    left: 34px;
+    color: #ff3838;
+}
+
+.md-form.form-sm {
+    position: relative;
+}
+
+.toast p {
+    margin: 0;
+}

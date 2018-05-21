@@ -1,0 +1,1326 @@
+@charset "utf-8";
+/* CSS Document */
+ @font-face{
+     font-family: Acre-Regular;
+     src:url(../font/acre/Acre-Regular.ttf) 
+}
+ @font-face{
+     font-family: Acre-Medium;
+     src:url(../font/acre/Acre-Medium.ttf) 
+}
+ @font-face{
+     font-family: Acre-Semibold;
+     src:url(../font/acre/Acre-Semibold.ttf) 
+}
+ @font-face{
+     font-family: Acre-Bold;
+     src:url(../font/acre/Acre-Bold.ttf) 
+}
+ @font-face{
+     font-family: Acre-Regular;
+     src:url(../font/acre/Acre-Regular.ttf) 
+}
+ body{
+     font-family: Acre-Regular !important;
+     overflow-x: hidden;
+}
+/**common styles**/
+ 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+
+
+.md-form {
+  
+    margin-bottom: 2.5rem;
+}
+
+ .ImageWrapper {
+     display: block;
+     overflow: hidden;
+     position: relative;
+}
+ .container {
+     max-width: 1270px;
+     width: 100%;
+}
+ .padding-top80 {
+     padding-top: 80px;
+}
+ .md-form .prefix.active {
+     color: #1f497d;
+}
+ input[type="date"]:focus:not([readonly]) + label, input[type="datetime-local"]:focus:not([readonly]) + label, input[type="email"]:focus:not([readonly]) + label, input[type="number"]:focus:not([readonly]) + label, input[type="password"]:focus:not([readonly]) + label, input[type="search-md"]:focus:not([readonly]) + label, input[type="search"]:focus:not([readonly]) + label, input[type="tel"]:focus:not([readonly]) + label, input[type="text"]:focus:not([readonly]) + label, input[type="time"]:focus:not([readonly]) + label, input[type="url"]:focus:not([readonly]) + label, textarea.md-textarea:focus:not([readonly]) + label {
+     color: #1f497d;
+}
+ input[type="date"]:focus:not([readonly]), input[type="datetime-local"]:focus:not([readonly]), input[type="email"]:focus:not([readonly]), input[type="number"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), input[type="search-md"]:focus:not([readonly]), input[type="search"]:focus:not([readonly]), input[type="tel"]:focus:not([readonly]), input[type="text"]:focus:not([readonly]), input[type="time"]:focus:not([readonly]), input[type="url"]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+     border-bottom: 1px solid #1f497d;
+     box-shadow: 0 1px 0 0 #1f497d;
+}
+ .btn{
+     border-radius: 0;
+}
+ .btn-default {
+     background-color: #1f497d !important;
+     display: block !important;
+     width: 200px;
+     border-radius: 0;
+     font-family: Acre-Semibold;
+     text-transform: capitalize;
+     font-size: 20px;
+     margin-top: 70px;
+     padding:.65rem 1.13rem;
+}
+ .btn-default:hover, .btn-default:active , .btn-default:focus , .btn-default:not([disabled]):not(.disabled):active{
+     background-color: #333 !important;
+}
+ .btn-theme{
+     background-color: #1f497d !important;
+     border-radius: 0;
+}
+.btn-theme.btn-inverse{
+ background-color: #333 !important;
+ color: #fff;
+ max-width: 150px;
+ width: 100%;
+ margin: 15px auto;
+    }
+ .btn-theme:hover, .btn-theme:active , .btn-theme:focus{
+     background-color: #333 !important;
+}
+}
+ info:not([disabled]):not(.disabled).active, .btn-info:not([disabled]):not(.disabled):active, .show > .btn-info.dropdown-toggle {
+    background-color: #333 !important;
+}
+ .btn-outline-info{
+     border-color: #1f497d;
+     color:#1f497d !important;
+}
+ .blue-text{
+     color:#1f497d !important;
+}
+ .heading h2 {
+     text-align: center;
+     padding: 40px 0 0;
+     font-family: Acre-Bold;
+     font-size: 28px;
+}
+.release-asset-value .divider{
+     max-width: 120px;
+} 
+ .divider {
+     text-align: center;
+     display: block;
+     position: relative;
+     max-width: 300px;
+     width: 100%;
+     margin: 20px auto;
+}
+.release-asset-value .divider::before{
+     width: 34%;
+}
+.release-asset-value .divider::after{
+     width: 34%;
+}
+.how-it-work  .divider{
+max-width: 134px;
+}
+.how-it-work   .divider::after{
+     width: 36%;
+}
+.how-it-work   .divider::before{
+     width: 36%;
+}
+
+.our-team  .divider{
+max-width: 146px;
+}
+.our-team   .divider::after{
+     width: 34%;
+}
+.our-team   .divider::before{
+     width: 34%;
+}
+
+
+.token-sale  .divider{
+     max-width: 146px;
+}
+.token-sale  .divider::after{
+     width: 36%;
+}
+
+.token-sale  .divider::before{
+     width: 36%;
+}
+ .divider:after {
+     position: absolute;
+     height: 2px;
+     width: 43%;
+     content: '';
+     background-color: #ddd;
+     top: 6px;
+     left: 0;
+}
+ .divider:before {
+     position: absolute;
+     height: 2px;
+     width: 43%;
+     content: '';
+     background-color: #ddd;
+     top: 6px;
+     right: 0;
+}
+
+
+ .divider img {
+     display: block;
+     margin: auto;
+}
+/***inline css***/
+/* TEMPLATE STYLES */
+/* Necessary for full page carousel*/
+ .full-height, .full-height body, .full-height header, .full-height header .view, .full-height body .view {
+     height: 100%;
+     max-height: 100vh;
+}
+ @media (max-width: 740px) {
+     .full-height, .full-height body, .full-height header, .full-height header .view, .full-height body .view {
+         height: 700px;
+         max-height: 700px;
+    }
+}
+ @media (min-width: 1000px) and (max-width: 1025px) {
+     .full-height, .full-height body, .full-height header, .full-height header .view, .full-height body .view {
+         height: 770px;
+         max-height: 770px;
+    }
+}
+ @media (min-width:1300px) {
+     .view video {
+         height: 100vh;
+         width: 100%;
+         object-fit: cover;
+    }
+}
+ .navbar {
+     background-color: transparent;
+}
+ .scrolling-navbar {
+     -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+     -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+     transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+ .top-nav-collapse {
+     background-color: #1C2331;
+}
+ footer.page-footer {
+     background-color: #1C2331;
+     margin-top: 0;
+}
+ @media only screen and (max-width: 768px) {
+     .navbar {
+         background-color: transparent;
+    }
+     .navbar.navbar-dark .navbar-toggler-icon{
+         background-color: #1f497d;
+    }
+}
+/* Carousel*/
+ .flex-center {
+     color: #fff;
+}
+ .carousel-caption {
+     height: 100%;
+     padding-top: 7rem;
+}
+ .navbar .btn-group .dropdown-menu a:hover {
+     color: #000 !important;
+}
+ .navbar .btn-group .dropdown-menu a:active {
+     color: #fff !important;
+}
+ .pagination.pg-dark .active .page-link {
+     background-color: #1c2331;
+}
+ @media all and (-ms-high-contrast:none) {
+     .view video {
+         height: 113vh;
+    }
+}
+/********/
+/**top-content nav css**/
+ #header .logo-img{
+     width: 150px;
+}
+ #header.navbar.scrolling-navbar{
+     padding:5px 0;
+     box-shadow: none;
+}
+ #header .navbar-nav .nav-link {
+     padding-right: 1.5rem;
+     padding-left: 1.5rem;
+     color: #000 !important;
+     font-size: 20px;
+}
+/*#header .navbar-nav .nav-item:last-child a{
+     padding-right: 0;
+}
+*/
+ #header.top-nav-collapse {
+     background-color: #fff;
+     box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12) !important;
+}
+/**nav css**/
+/*****video css*******/
+ #video-carousel-example2 .carousel-caption{
+     left: 0;
+     right: 0;
+}
+ #video-carousel-example2 .carousel-caption h1 {
+     color: #000;
+     font-size: 70px;
+     text-align: center;
+     padding-top: 0px;
+     font-family: Acre-Semibold;
+     line-height: 1;
+}
+#video-carousel-example2 .carousel-caption p {
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+    padding-top: 0;
+    font-family: Acre-Semibold;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    width: 100%;
+}
+ #video-carousel-example2 .flex-center ul{
+     width: 100%;
+}
+ #video-carousel-example2 .carousel-caption .btn-default {
+     margin: 20px auto;
+     display: inline-block !important;
+width: 300px;
+}
+/*****video css*******/
+/*****instant funding*******/
+.instant-funding {
+    padding: 0 0 30px;
+    background-color: #e9e9e9;
+    color: #333;
+}
+.instant-funding .waves-price ul {
+     padding: 0;
+     list-style: none;
+}
+ .instant-funding .waves-price ul li{
+     margin-bottom: 30px;
+}
+ .instant-funding .waves-price h5 {
+     text-transform: lowercase;
+}
+ .instant-funding .mula-liquidity h3 {
+     font-weight: bold;
+}
+ .instant-funding .waves-price h2 {
+     font-weight: bold;
+}
+ .instant-funding .mula-liquidity p {
+     max-width: 500px;
+     width: 100%;
+   
+}
+ .instant-funding .mula-inner-liquidity {
+     margin: 30px 0;
+}
+ .mula-solve-icon img {
+     width: 100px;
+}
+.intro-details p {
+    font-size: 26px;
+}
+
+.muls-xplainer-title {
+
+    text-align: center;
+    display: inline-block;
+    float: none;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+}
+.video-mula video {
+   
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 8;
+    padding: 10px;
+    }
+    .video-mula{
+     position: relative;
+      max-width: 600px;
+    margin:0 auto 20px;
+    width: 100%;
+    }
+.video-mula::after {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 8%;
+    border-top: 2px solid #1f497d;
+    border-right: 2px solid #1f497d;
+    top: 0;
+    right: 15px;
+    z-index: 5;
+    transition: 0.5s all linear;
+}
+.video-mula::before {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 8%;
+    border-bottom: 2px solid #1f497d;
+    border-left: 2px solid #1f497d;
+    bottom:  0;
+    left: 15px;
+    z-index: 5;
+    transition: 0.5s all linear;
+}
+
+.video-mula:hover:after , .video-mula:hover:before{
+     width: 100%;
+    height: 100%;
+    transition: 0.5s all linear;
+}
+/********instant funding*******/
+/********what problem mula solve*******/
+ .what-problem-mula {
+     background-color: #f1f1f1;
+     padding: 0 0 30px;
+}
+ .what-problem-mula .mula-solve {
+     text-align: center;
+     padding: 30px 15px;
+     min-height: 284px;
+     border-radius: 0;
+}
+ .what-problem-mula .toke-one-img img {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    display: block;
+}
+ .what-problem-mula  .single-feature {
+    padding: 20px 0;
+}
+.single-feature h4 {
+
+    font-size: 30px;
+
+}
+.single-feature p {
+
+    font-size: 24px;
+
+}
+ .what-problem-mula .mula-solve-title h3 {
+     font-size: 20px;
+     max-width: 300px;
+     margin: 5px auto;
+}
+ .what-problem-mula .ContentWrapperFe .ContentFe {
+     position: absolute;
+     background: #ffffff;
+     opacity: 0;
+     visibility: hidden;
+     width: 100%;
+     height: 100%;
+     display: block;
+     top: 0;
+     right: 0;
+     -webkit-transform-origin: top right;
+     -moz-transform-origin: top right;
+     -ms-transform-origin: top right;
+     -o-transform-origin: top right;
+     transform-origin: top right;
+     -webkit-transform-style: preserve-3D;
+     -moz-transform-style: preserve-3D;
+     -ms-transform-style: preserve-3D;
+     -o-transform-style: preserve-3D;
+     transform-style: preserve-3D;
+     -webkit-transform: rotate(180deg);
+     -moz-transform: rotate(180deg);
+     -ms-transform: rotate(180deg);
+     -o-transform: rotate(180deg);
+     transform: rotate(180deg);
+     -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+     -ms-transition: all 0.3s ease 0s;
+     -o-transition: all 0.3s ease 0s;
+     transition: all 0.3s ease 0s;
+}
+ .what-problem-mula .ContentWrapperFe .ContentFe .Content {
+     position: absolute;
+     top: 10%;
+     padding: 0 10px;
+}
+ .what-problem-mula .ContentWrapperFe:hover .ContentFe {
+     opacity: 1;
+     visibility: visible;
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     transform: rotate(0deg);
+     background-color: #1f497d;
+     color: #fff;
+     font-size: 22px;
+}
+ .what-problem-mula .mula-solve-icon {
+     padding-bottom: 20px;
+}
+ .what-problem-mula .mula-blocks {
+     padding:  0;
+}
+/********what problem mula solve*******/
+/********release asset value*******/
+ .release-asset-value{
+     background-color:#1f497d;
+     padding: 0 0 40px;
+     color: #fff;
+     position: relative;
+     z-index: 1 
+}
+/*.release-asset-value:after{
+     position: absolute;
+     background-color: rgba(0,0,0,0
+     top: 0;
+     left: 0;.5);
+     content: '';
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+}
+*/
+ .release-asset-value .asset-full-content {
+     padding: 30px 0;
+}
+ .release-asset-value .assets-value {
+     padding-top: 20px;
+     width: 100%;
+}
+ .release-asset-value .assets-value{
+     color: #fff;
+}
+ .release-asset-value .trade-image img {
+     width: 100%;
+     margin: 80px auto;
+     display: block;
+     max-width: 400px;
+}
+ .release-asset-value .assets-value p {
+     margin-bottom: 28px;
+     font-size: 20px;
+}
+/********release asset value*******/
+/********who should use*******/
+ .who-should-use {
+     background-color: #f1f1f1;
+}
+ .who-should-use .img-patform {
+     overflow: hidden;
+}
+ .who-should-use .img-patform img{
+     width: 100%;
+     transform: scale(1);
+     transition: 0.3s all linear;
+}
+ .who-should-use .img-patform img:hover{
+     transform: scale(1.1);
+}
+ .who-should-use .use-platform.card {
+     position: relative;
+     min-height: 140px;
+}
+ .who-should-use .platform-discriptor {
+     bottom: 0;
+     background-color: #fff;
+     padding: 15px 10px;
+     width: 100%;
+}
+ .who-should-use .platform-discriptor h4 {
+     font-size: 18px;
+     color: #1f497d;
+     font-family: Acre-bold;
+}
+ .who-should-use .platform-discriptor p {
+     color: #515151;
+     margin-bottom: 0;
+     font-size: 14px;
+}
+ .who-should-use .our-platform {
+     padding: 50px 0;
+}
+/********who should use*******/
+/********how it work *******/
+ .how-it-work .block-work {
+     text-align: center;
+}
+ .how-it-work .work-icon img {
+     width: 100px;
+     margin: 22px 0;
+}
+ .how-it-work .work-title {
+     font-family: Acre-bold;
+     font-size: 20px;
+     margin: 20px 0;
+     text-transform: uppercase;
+}
+ .how-it-work .about-work p {
+     max-width: 350px;
+     margin: 14px auto;
+     font-size: 18px;
+}
+ .how-it-work .work-icon img {
+     width: 100px;
+     margin: 10px auto;
+     display: block;
+}
+ .how-it-work .about-work p {
+     color: #515151;
+}
+ .how-it-work .how-works-container {
+     padding: 30px 0;
+}
+/********how it work******/
+/********mula coin value*******/
+ .mula-coin-value {
+     background-color: #1f497d;
+     padding: 50px 0;
+}
+ .mula-coin-value .wrap-graph img {
+     width: 100%;
+     display: block;
+     margin: auto;
+}
+ .mula-coin-value .expected-increase h2 {
+     color: #fff;
+     font-size: 25px;
+     margin-top: 0;
+}
+ .expected-increase p {
+     color: #fff;
+     margin-top: 20px;
+     font-size: 20px;
+}
+ .btn-theme.create-wallet {
+     background-color: #fe6b1d !important;
+}
+ .expected-increase {
+     padding-top: 50px;
+}
+ .crypto-funding-xchng p {
+     max-width: 800px;
+     margin: 40px auto;
+     width: 100%;
+     text-align: center;
+     font-size: 20px;
+}
+ .crypto-funding-xchng .create-wallet {
+     margin: auto;
+     display: block;
+     width: 250px;
+}
+ .mula-coin-value .expected-increase h2 {
+     font-size: 26px;
+}
+/********mula coin value*******/
+/********what-we-accept*******/
+ .what-we.accept {
+     padding-bottom: 50px;
+}
+/********what-we-accept*******/
+/******our-team*****/
+ .our-team {
+     background-color: #f1f1f1;
+}
+ .our-team .team-member-image {
+     transition: 0.5s all linear;
+}
+ .our-team .team-member-image > img {
+     width: 100%;
+}
+ .our-team .member-social-touch {
+     background-color: rgba(31,73,125,0.8);
+     padding: 15px;
+}
+ .our-team .team-member-image {
+     position: relative;
+}
+ .our-team .member-social-touch ul {
+     list-style: none;
+     padding: 0;
+     padding: 91px 0;
+}
+ .our-team .member-social-touch li {
+     list-style: none;
+     display: inline-block;
+     margin: 6px;
+     vertical-align: middle;
+}
+ .our-team .about-member h3 {
+     font-size: 20px;
+     font-family: Acre-bold;
+     margin: 11px 0 5px;
+}
+ .our-team .about-member p {
+     color: #515151;
+     text-align: justify;
+}
+ .our-team-wrapper {
+     padding: 40px 0;
+}
+ .our-team .ImageWrapper .ImageOverlayC::after {
+     background: none repeat scroll 0 0 rgba(31,73,125,0.8);
+     height: 100%;
+     content: "";
+     display: block;
+     right: -100%;
+     opacity: 0;
+     position: absolute;
+     top: 0;
+     -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+     -ms-transition: all 0.3s ease 0s;
+     -o-transition: all 0.3s ease 0s;
+     transition: all 0.3s ease 0s;
+     width: 100%;
+}
+ .our-team .ImageWrapper .ImageOverlayC::before {
+     background: none repeat scroll 0 0 rgba(31,73,125,0.8);
+     height: 100%;
+     content: "";
+     display: block;
+     left: -100%;
+     opacity: 0;
+     position: absolute;
+     top: 0;
+     -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+     -ms-transition: all 0.3s ease 0s;
+     -o-transition: all 0.3s ease 0s;
+     transition: all 0.3s ease 0s;
+     width: 100%;
+}
+ .our-team .team-member-image img {
+     width: 100%;
+}
+ .our-team .ImageWrapper .StyleH {
+     visibility: hidden;
+     margin: 0;
+     opacity: 0;
+     position: absolute;
+     text-align: center;
+     width: 100%;
+     top: 50%;
+     margin-top: -20px;
+     -webkit-transition: all 0.3s ease 0s;
+     -moz-transition: all 0.3s ease 0s;
+     -ms-transition: all 0.3s ease 0s;
+     -o-transition: all 0.3s ease 0s;
+     transition: all 0.3s ease 0s;
+}
+ .our-team .WhiteRounded {
+     background-color: #ffffff;
+     border: medium none;
+     display: inline-block !important;
+     float: none !important;
+     font-size: 14px;
+     font-weight: normal;
+     height: 40px;
+     line-height: 40px;
+     margin: 0 2px;
+     text-align: center;
+     width: 40px;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     border-radius: 50%;
+     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(0, 0, 0, .1);
+     -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(0, 0, 0, .1);
+     -ms-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(0, 0, 0, .1);
+     -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(0, 0, 0, .1);
+     box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(0, 0, 0, .1);
+}
+ .our-team .ImageWrapper:hover .StyleH {
+     opacity: 1;
+     visibility: visible;
+}
+ .our-team .ImageWrapper:hover .ImageOverlayC::before {
+     left: -50%;
+     opacity: 1;
+}
+ .our-team .ImageWrapper:hover .ImageOverlayC::after {
+     right: -50%;
+     opacity: 1;
+}
+ .our-team .StyleH ul {
+     padding: 0;
+}
+ .our-team .WhiteRounded img {
+     width: 38px;
+     vertical-align: middle;
+     display: block;
+     margin: auto;
+}
+ .our-team .hvr-underline-from-center::before {
+     content: "";
+     position: absolute;
+     z-index: -1;
+     left: 50%;
+     right: 50%;
+     bottom: 0;
+     background: #1f497d;
+     height: 4px;
+     -webkit-transition-property: left, right;
+     transition-property: left, right;
+     -webkit-transition-duration: 0.3s;
+     transition-duration: 0.3s;
+     -webkit-transition-timing-function: ease-out;
+     transition-timing-function: ease-out;
+}
+ .our-team .hvr-underline-from-center {
+     display: block;
+     vertical-align: middle;
+     -webkit-transform: perspective(1px) translateZ(0);
+     transform: perspective(1px) translateZ(0);
+     box-shadow: 0 0 1px transparent;
+     position: absolute;
+     overflow: hidden;
+     bottom: 0 !important;
+     width: 100%;
+}
+ [class^="hvr-"] {
+     margin: .4em;
+     padding: 1em;
+     cursor: pointer;
+     background:transparent;
+     text-decoration: none;
+     color: #666;
+     -webkit-tap-highlight-color: rgba(0,0,0,0);
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+ .team-member:hover .hvr-underline-from-center::before {
+     left: 0;
+     right: 0;
+}
+.team-member {
+    margin-bottom: 40px;
+}
+.about-member {
+    min-height: 355px;
+}
+/********footer*******/
+ footer .footer-top {
+     background-color: #2e2e2e;
+     padding: 50px 0;
+     color: #fff;
+}
+ footer .footer-logo img {
+     width: 100%;
+     display: block;
+     max-width: 180px;
+}
+ footer .footer-address {
+     float: right;
+}
+ footer .footer-contact-details {
+     border-left: 3px solid #7c7c7c;
+     padding-left: 20px;
+}
+ footer .footer-address-social {
+   border-left: 3px solid #7c7c7c;
+     padding-left: 20px;
+     padding-bottom: 8px;
+      
+}
+
+
+
+ footer .footer-col-6 {
+     padding: 10px 0;
+}
+ footer .footer-contact {
+     padding-left: 20px;
+}
+ footer .social-icons {
+     list-style: none;
+     padding: 0;
+}
+ footer .social-icons li{
+     display: inline-block;
+}
+ footer .social-icons a {
+     color: #fff;
+     margin: 0px;
+     background-color: #262626;
+     height: 40px;
+     width: 40px;
+     display: block;
+     text-align: center;
+     line-height: 2.5;
+     border-radius: 50%;
+     transition: 0.5s all linear;
+}
+ footer .social-icons a:hover {
+     color: #fff;
+     background-color: #1f497d;
+     transform: rotateY(360deg);
+}
+ footer .footer-bottom {
+     background-color: #262626;
+     color: #fff;
+     text-align: center;
+     padding: 20px 0;
+}
+ footer .footer-bottom p{
+     margin: 0;
+}
+/********footer*******/
+/********modal*******/
+ #modalLRFormDemo .light-blue.darken-3 {
+     background-color: #1f497d !important;
+}
+/********instant payment page*******/
+ .instant-payment-page .payment-method-image img {
+     width: 100%;
+}
+ .payment-meth-title p {
+     text-align: center;
+     color: #515151;
+}
+ .instant-payment-page p.payment-pera {
+     text-align: center;
+     color: #515151;
+     max-width: 630px;
+     margin: 15px auto;
+     font-size: 18px;
+}
+ .instant-payment-page .how-payment-works h4 {
+     color: #1f497d;
+     font-size: 20px;
+     font-family: Acre-Semibold;
+     margin: 40px 0;
+}
+ .instant-payment-page {
+     background-color: #f1f1f1;
+}
+ .navbar-inner-page {
+     background-color: #fff;
+}
+/********contact page*******/
+ .contact-page{
+     background-color: #f1f1f1;
+     padding-bottom: 50px;
+     background-image: url(../images/video-poster2.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+ .contact-page .modal-dialog.cascading-modal {
+     margin-top: 6%;
+     margin-bottom: 0;
+}
+ .contact-page .modal-header{
+     background-color:#1f497d !important ;
+}
+/*******forget password************/
+ .forget-pw {
+     background-color: #f1f1f1;
+     padding-bottom: 50px;
+}
+ .forget-pw .modal-dialog.cascading-modal {
+     margin-top: 6%;
+     margin-bottom: 0;
+}
+ .forget-pw .modal-header {
+     background-color: #1f497d !important;
+}
+/********************************/
+/* Media Queries */
+/********************************/
+ @media screen and (max-width: 980px){
+     .navbar {
+         padding-right: 0 !important;
+    }
+     .collapse.show {
+         display: block;
+         background-color: #fff;
+    }
+     .navbar.navbar-dark .navbar-toggler{
+         background-color: #1f497d;
+         margin-right: 1rem;
+    }
+    .navbar-brand {
+          margin-left: 1rem;
+     }
+}
+ @media screen and (max-width: 768px){
+     .what-problem-mula .ContentWrapperFe:hover .ContentFe {
+         visibility: visible;
+         color: #fff;
+         font-size: 18px;
+    }
+     .expected-increase {
+         padding-top: 0;
+    }
+     footer .footer-address {
+         float: left;
+    }
+     footer .footer-address-social {
+         padding-left: 20px;
+    }
+}
+ @media screen and (max-width:414px){
+     .view video {
+         height: 100vh;
+         width: 100%;
+         object-fit: cover;
+    }
+     #video-carousel-example2 .carousel-caption h1 {
+         font-size: 33px;
+         padding-top: 0;
+    }
+     #video-carousel-example2 .carousel-caption p {
+         font-size: 18px;
+         padding-top: 0;
+         margin-top: -26px;
+         margin-bottom: 40px;
+    }
+     .instant-funding .waves-price h2 {
+         font-weight: bold;
+         font-size: 20px;
+    }
+     .instant-funding .waves-price h5 {
+         text-transform: lowercase;
+         font-size: 16px;
+    }
+     .instant-funding .mula-liquidity h3 {
+         font-size: 18px;
+    }
+     .what-problem-mula .mula-solve{
+         margin: 15px 0;
+    }
+     .who-should-use .use-platform.card{
+         margin: 15px 0;
+    }
+     .team-member {
+              margin: 20px 0;
+          }
+          .release-asset-value .asset-full-content {
+              padding: 0;
+          }
+          .what-problem-mula .mula-blocks {
+                   padding: 10px 0;
+               }
+     footer .footer-contact-details {
+         border-left: none;
+    }
+     footer .footer-contact , footer .footer-address-social{
+         padding-left: 0;
+    }
+    .who-should-use .our-platform {
+         padding: 0px 0;
+     }
+    
+         footer .footer-top {
+          
+              padding: 20px 0;
+             
+          }
+          footer .footer-logo img {
+          
+              max-width: 180px;
+          }
+          .heading h2 {
+              padding: 10px 0 0;
+          }
+          .contact-page .modal-dialog.cascading-modal {
+              margin-top: 21%;
+              
+          }
+         #modalLRFormDemo  .modal-dialog.cascading-modal {
+                   margin-top: 30%;
+               }
+               .btn[class*="btn-outline-"] {
+                         padding: 10px;
+               }
+               .options.text-center.text-md-right.mt-1 {
+
+                   font-size: 14px;
+
+               }
+               .modal-footer > :not(:last-child) {
+                      
+                       width: 65%;
+               }
+     }
+ @media screen and (max-width:320px){
+     #video-carousel-example2 .carousel-caption h1 {
+         font-size: 30px;
+         padding-top: 0;
+     }
+
+     .contact-page .modal-dialog.cascading-modal {
+              margin-top:30%;
+              
+          }
+}
+
+/**26/03/18 our technology**/
+.single-mula-content {
+    padding-bottom: 20px;
+}
+.single-mula-content h3{
+
+    font-size: 30px;
+
+}
+
+.single-mula-content p {
+
+    font-size: 24px;
+
+}
+
+.our-technology {
+    padding-bottom: 30px;
+}
+ 
+ .token-sale-MUT{
+     padding-top: 30px;
+ }
+ .token-sale {
+    background-color: #f5f5f5;
+}
+.white-paper-content {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+}
+.token-sale-MUT.card {
+    
+    text-align: center;
+    font-size: 18px;
+}
+.token-sale-MUT h3 {
+    padding-bottom: 15px;
+}
+.token-sale-MUT p {
+
+    color: #333;
+    font-size: 23px;
+
+}
+.token-sale-MUT .btn-theme {
+
+    font-size: 18px;
+
+}
+.token-sale-wrapper {
+    background-color: #fff;
+    color: #333;
+    padding: 30px;
+}
+.token-holder h4 {
+    background-image: url(../images/tick-mark.png);
+    padding-left: 40px;
+    background-size: 34px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+
+.token-sale .token-holder {
+    padding-bottom: 40px;
+}
+
+.token-holder .token-card.card {
+    padding: 15px;
+    min-height: 400px;
+}
+.crypto-funding-xchng .token-holder .token-card.card {
+    padding: 15px;
+    min-height: 280px;
+    margin-bottom: 40px;
+}
+ .token-card p {
+    margin: 0;
+    text-align: left;
+    font-size: 20px;
+}
+.mula-coin-img img {
+
+    width: 250px;
+    display: block;
+    margin: auto;
+
+}
+.sale-table{
+     margin-top: 20px;
+}
+.sale-table td{
+     font-size: 18px;
+}
+.sale-table th{
+     font-weight: bold;
+      font-size: 18px;
+}
+.sale-information {
+    padding: 30px 0;
+}
+.token-distributer-details li{
+list-style: none;
+line-height: 3;
+}
+.token-dis-color li {
+    display: inline;
+    padding-right: 20px;
+}
+.token-dis-color span {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.token-dis-color ul{
+     padding:0;
+}
+.token-distributer {
+    background-color: #fff;
+    padding: 40px 0;
+}
+.white-paper-content .btn {
+    font-size: 18px;
+    margin: 20px 15px;
+}
+.white-paper-content p {
+    padding-top: 0;
+    width: 600px;
+    font-size: 20px;
+    margin: 30px auto;
+}
+.token-distributer-details li .fa-angle-right {
+    color: #4f81bd;
+    font-weight: bold;
+}
+/**demo  (other page css)**/
+
+.demo-page {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #eee;
+    width: 100%;
+}
+.demo-page p {
+    max-width: 800px;
+    margin: 20px auto 40px;
+    font-size: 20px;
+    text-align: center;
+}
+.demo-page table{
+    margin-bottom: 0;
+}
+.demo-page table.table thead th {
+    border-top: none;
+    background-color: #1f497d;
+    color: #fff;
+    font-size: 18px;
+}
+.demo-page table.table   td{
+     font-size: 16px;
+}
+.steps-page {
+     padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #eee;
+}
+.steps-page p{
+     max-width: 800px;
+    margin: 20px auto 40px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+.step-wrapper .step-content {
+    padding: 15px;
+}
+.token-btns {
+    text-align: center;
+}
+.step-content h3 {
+    text-align: center;
+    margin-top: 15px;
+    color: #1f497d;
+}
+.step-content .btn-theme {
+    font-size: 16px;
+}
+/*.step-content  input {
+height: 0.1em;
+}*/
+.token-info-block {
+    border-right: 1px solid #c8c8c8;
+}
+input[type="date"], input[type="datetime-local"], input[type="email"], input[type="number"], input[type="password"], input[type="search-md"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], textarea.md-textarea {
+ /*height: 18px;*/
+ font-size: 16px;
+ margin-bottom: 0 !important;
+}
+.step-content .grey-text {
+    margin-bottom: 0;
+}
+ 
+ .step-2 .token-btns{
+    padding-top: 20px;
+ }
+ .step-content h4 {
+    text-align: center;
+    color: #1f497d;
+}
+.step-3 th, .step-3 td {
+    padding: 10px !important;
+}
+.step-3 table{
+    margin:0;
+}
+.payment-sec {
+    padding-top: 40px;
+}
+.payment-sec .btn-theme {
+    margin-top: 30px;
+}
+.payment-sec .lower-pera {
+    margin-bottom: 0;
+}
+
+span.selectableBox {
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #1f497c;
+    color: #1f487b;
+    cursor: pointer;
+}
+
+span.selectableBox.active {
+    background: #1f497c;
+    color: #ffffff;
+}
